@@ -11,6 +11,11 @@
 
 unsigned int str_cpy(char *buffer, char c, unsigned int j)
 {
+	if (j == 1024)
+	{
+		buffer_output(buffer, j);
+		j = 0;
+	}
 	buffer[j] = c;
 	j++;
 	return (j);
