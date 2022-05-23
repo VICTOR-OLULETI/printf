@@ -4,13 +4,11 @@
  * identifier_size - returns size of identifiers
  * @format: format specifier
  * @index: index of identifier
- *
  * Return: size of identifier
  */
 int identifier_size(const char *format, int index)
 {
-	op_t ops[] =
-	{
+	op_t ops[] = {
 		{"c", str_char}, {"s", str_str}, {"i", str_int},
 		{"d", str_int}, {"b", str_bnr}, {"u", str_unt},
 		{"o", str_oct}, {"x", str_hex}, {"X", str_upx},
@@ -49,5 +47,4 @@ int identifier_size(const char *format, int index)
 			index = primary_index;
 		}
 	}
-	return (j);
-}
+

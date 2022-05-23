@@ -1,9 +1,7 @@
 #include "main.h"
-
 /**
  * _printf - produces output according to a format
  * @format: contains format specifier within string
- *
  * Return: returns the number of characters printed
  */
 int _printf(const char *format, ...)
@@ -16,8 +14,6 @@ int _printf(const char *format, ...)
 	va_start(vl, format), buffer = malloc(sizeof(char) * 1024);
 	if (!format || !buffer || (format[i] == '%' && !format[i + 1]))
 		return (-1);
-	if (!format[i])
-		return (0);
 	for (i = 0; format && format[i]; i++)
 	{
 		if (format[i] == '%')
@@ -48,6 +44,6 @@ int _printf(const char *format, ...)
 		for (j = buff_len; j > 1024; j -= 1024)
 			;
 	}
-	buffer_output(buffer, buff_len), free(buffer), va_end(vl);
+	buffer_output(buffer, j), free(buffer), va_end(vl);
 	return (buff_len);
 }
