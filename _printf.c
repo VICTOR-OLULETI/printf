@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print - produces output according to a format
+ * _printf - produces output according to a format
  * @format: contains format specifier within string
  *
  * Return: returns the number of characters printed
@@ -45,6 +45,8 @@ int _printf(const char *format, ...)
 		}
 		else
 			str_cpy(buffer, format[i], j), buff_len++;
+		for (j = buff_len; j > 1024; j -= 1024)
+			;
 	}
 	buffer_output(buffer, j), free(buffer), va_end(vl);
 	return (buff_len);
