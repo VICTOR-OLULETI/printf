@@ -13,7 +13,7 @@ int print(const char *format, ...)
 	int (*func)(va_list, char *, unsigned int);
 	char *buffer;
 
-	va_start(vl, format), buffer = malloc(sizeof(char) * 100);
+	va_start(vl, format), buffer = malloc(sizeof(char) * 1024);
 	if (!format || !buffer || (format[i] == '%' && !format[i + 1]))
 		return (-1);
 	if (!format[i])
@@ -24,7 +24,7 @@ int print(const char *format, ...)
 		{
 			if (format[i + 1] == '\0')
 			{
-				buff_output(buffer, j), free(buffer), va_end(vl);
+				buffer_output(buffer, j), free(buffer), va_end(vl);
 				return (-1);
 			}
 			else
@@ -46,6 +46,6 @@ int print(const char *format, ...)
 		else
 			str_cpy(buffer, format[i], j), buff_len++;
 	}
-	buff_output(buffer, j), free(buffer), va_end(vl);
+	buffer_output(buffer, j), free(buffer), va_end(vl);
 	return (buff_len);
 }
