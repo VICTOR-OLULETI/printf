@@ -48,6 +48,6 @@ int _printf(const char *format, ...)
 		for (j = buff_len; j > 1024; j -= 1024)
 			;
 	}
-	buffer_output(buffer, j), free(buffer), va_end(vl);
+	buffer_output(buffer, buff_len), free(buffer), va_end(vl);
 	return (buff_len);
 }
