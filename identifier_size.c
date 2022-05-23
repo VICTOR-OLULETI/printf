@@ -18,7 +18,7 @@ int identifier_size(const char *format, int index)
 		{"ld", str_lint}, {"lu", str_lunt}, {"lo", str_loct},
 		{"lx", str_lhex}, {"lX", str_lupx}, {"hi", str_hint},
 		{"hd", str_hint}, {"hu", str_hunt}, {"ho", str_hoct},
-		{"hx", str_hhex}, {"hX", str_hupx}, {"#o", str_noct},
+		{"hx", str_shex}, {"hX", str_hupx}, {"#o", str_noct},
 		{"#x", str_nhex}, {"#X", str_nupx}, {"#i", str_int},
 		{"#d", str_int}, {"#u", str_unt}, {"+i", str_pint},
 		{"+d", str_pint}, {"+u", str_unt}, {"+o", str_oct},

@@ -10,7 +10,7 @@
 
 char *_strcpy(char *str1, char *str2)
 {
-	int n, l, k;
+	int n, k;
 	int i = 0, j = 0;
 
 	while (str1[i])
