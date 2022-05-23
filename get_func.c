@@ -21,7 +21,7 @@ int (*get_func(const char *format, int index))(va_list, char *, unsigned int)
 		{"lo", str_loct}, {"lx", str_lhex},
 		{"lX", str_lupx}, {"hi", str_hint},
 		{"hd", str_hint}, {"hu", str_hunt},
-		{"ho", str_hoct}, {"hx", str_hhex},
+		{"ho", str_hoct}, {"hx", str_shex},
 		{"hX", str_hupx}, {"#o", str_noct},
 		{"#x", str_nhex}, {"#X", str_nupx},
 		{"#i", str_int}, {"#d", str_int},
