@@ -36,7 +36,7 @@ int (*get_func(const char *format, int index))(va_list, char *, unsigned int)
 		{"l", str_prg}, {"h", str_prg},
 		{" +i", str_pint}, {" +d", str_pint},
 		{"+ i", str_pint}, {"+ d", str_pint},
-		{" %", str_prg}, {NULL, NULL}
+		{" %", str_prg}, {NULL, NULL},
 	};
 	int i = 0, j = 0, primary_index;
 

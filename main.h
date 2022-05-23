@@ -16,7 +16,7 @@
  * functions
  */
 
-typedef struct op
+typedef struct operator
 {
 	char *op;
 	int (*func)(va_list, char *, unsigned int);
@@ -26,7 +26,7 @@ int _putchar(char c);
 char *_strcpy(char *str1, char *str2);
 char *__strrev(char *str);
 char *__itoa(int i, char *strout, int base);
-int print(const char *format, ...);
+int _printf(const char *format, ...);
 int buffer_output(char *buffer, unsigned int j);
 unsigned int str_cpy(char *buffer, char c, unsigned int j);
 int (*get_func(const char *s, int index))(va_list, char *, unsigned int);

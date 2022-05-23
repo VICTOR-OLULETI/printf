@@ -6,7 +6,7 @@
  *
  * Return: returns the number of characters printed
  */
-int print(const char *format, ...)
+int _printf(const char *format, ...)
 {
 	va_list vl;
 	unsigned int i = 0, j = 0, buff_len = 0;
