@@ -10,7 +10,7 @@
 int str_usr(va_list vl, char *buf, unsigned int j)
 {
 	unsigned char *str;
-	char *hexadecimal, *buffer;
+	char *hexadecimal, *binary;
 	unsigned int i, sum, op;
 
 	str = va_arg(vl, unsigned char *);

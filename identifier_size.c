@@ -9,10 +9,11 @@
  */
 int identifier_size(const char *format, int index)
 {
-	op_t ops[] = {
+	op_t ops[] =
+	{
 		{"c", str_char}, {"s", str_str}, {"i", str_int},
 		{"d", str_int}, {"b", str_bnr}, {"u", str_unt},
-		{"o", str_oct}, {"x", str_hex}. {"X", str_upx},
+		{"o", str_oct}, {"x", str_hex}, {"X", str_upx},
 		{"S", str_usr}, {"p", str_add}, {"li", str_lint},
 		{"ld", str_lint}, {"lu", str_lunt}, {"lo", str_loct},
 		{"lx", str_lhex}, {"lX", str_lupx}, {"hi", str_hint},

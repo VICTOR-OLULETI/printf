@@ -36,14 +36,14 @@ int str_add(va_list vl, char *buffer, unsigned int j)
 	hexadecimal = hex_array(binary, hexadecimal, 0, 16);
 	j = str_cpy(buffer, '0', j);
 	j = str_cpy(buffer, 'x', j);
-	for (first_digit = i = coutn = 0; hexadecimal[i]; i++)
+	for (first_digit = i = count = 0; hexadecimal[i]; i++)
 	{
 		if (hexadecimal[i] != '0' && first_digit == 0)
 			first_digit = 1;
 		if (first_digit)
 		{
 			j = str_cpy(buffer, hexadecimal[i], j);
-			cout++;
+			count++;
 		}
 	}
 	free(binary);

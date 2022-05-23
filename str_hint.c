@@ -1,18 +1,18 @@
 #include "main.h"
 
 /**
- * str_lint - print long integer
+ * str_hint - prints short integer
  * @vl: list
- * @buf: buffer pointer
+ * @buf: buffer
  * @j: index
  * Return: number of characters
  */
-int str_lint(va_list vl, char *buf, unsigned int j)
+int str_hint(va_list vl, char *buf, unsigned int j)
 {
-	long int input;
-	unsigned long int int_in, temp, i, div, isneg;
+	short int input;
+	unsigned short int int_in, temp, i, div, isneg;
 
-	input = va_arg(vl, long int);
+	input = va_arg(vl, int);
 	isneg = 0;
 	if (input < 0)
 	{

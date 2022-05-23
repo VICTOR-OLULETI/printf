@@ -12,7 +12,7 @@ int str_rot(va_list vl, char *buf, unsigned int j)
 	char alp[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char rot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 	char *str;
-	unsigned int i, j, k;
+	unsigned int i, l, k;
 	char empty[] = "(avyy)";
 
 	str = va_arg(vl, char *);
@@ -24,12 +24,12 @@ int str_rot(va_list vl, char *buf, unsigned int j)
 	}
 	for (i = 0; str[i]; i++)
 	{
-		for (k = j = 0; alp[j]; j++)
+		for (k = l = 0; alp[l]; l++)
 		{
-			if (str[i] == alp[j])
+			if (str[i] == alp[l])
 			{
 				k = 1;
-				j = str_cpy(buf, rot[j], j);
+				j = str_cpy(buf, rot[l], j);
 				break;
 			}
 		}

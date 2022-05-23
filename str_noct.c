@@ -41,6 +41,6 @@ int str_noct(va_list vl, char *buf, unsigned int j)
 		}
 	}
 	free(binary);
-	free(cotal);
+	free(octal);
 	return (count + 1);
 }

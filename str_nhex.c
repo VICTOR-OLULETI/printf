@@ -43,5 +43,5 @@ int str_nhex(va_list vl, char *buf, unsigned int j)
 	}
 	free(binary);
 	free(hexadecimal);
-	return (coutn + 2);
+	return (count + 2);
 }

@@ -9,7 +9,7 @@
 int print(const char *format, ...)
 {
 	va_list vl;
-	unsigned int i = 0, j = 0, buf_len = 0;
+	unsigned int i = 0, j = 0, buff_len = 0;
 	int (*func)(va_list, char *, unsigned int);
 	char *buffer;
 

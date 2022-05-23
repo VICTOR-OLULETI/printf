@@ -13,7 +13,7 @@ int str_lhex(va_list vl, char *buf, unsigned int j)
 	long int input, i, isneg, count, first_digit;
 	char *hexadecimal, *binary;
 
-	input = va_arg(vl, lont int);
+	input = va_arg(vl, long int);
 	isneg = 0;
 	if (input == 0)
 	{

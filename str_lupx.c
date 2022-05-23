@@ -10,7 +10,7 @@
 
 int str_lupx(va_list vl, char *buf, unsigned int j)
 {
-	lont int input, i, isneg, count, first;
+	long int input, i, isneg, count, first;
 	char *hexadecimal, *binary;
 
 	input = va_arg(vl, long int);
