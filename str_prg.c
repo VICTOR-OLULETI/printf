@@ -9,7 +9,7 @@
  * Return: on success 1.
  */
 
-int str_prg(va_list vl __attribute((unused)), char *buf, unsigned int i)
+int str_prg(va_list vl __attribute__((unused)), char *buf, unsigned int i)
 {
 	str_cpy(buf, '%', i);
 	return (1);
