@@ -47,4 +47,5 @@ int identifier_size(const char *format, int index)
 			index = primary_index;
 		}
 	}
-
+	return (j);
+}

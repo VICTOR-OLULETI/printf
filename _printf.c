@@ -3,9 +3,9 @@
 /**
  * _printf - produces output according to a format
  * @format: contains format specifier within string
+ *
  * Return: returns the number of characters printed
  */
-
 int _printf(const char *format, ...)
 {
 	va_list vl;
@@ -23,13 +23,11 @@ int _printf(const char *format, ...)
 		if (format[i] == '%')
 		{
 			if (format[i + 1] == '\0')
-			{
-				buffer_output(buffer, j), free(buffer), va_end(vl);
+			{	buffer_output(buffer, j), free(buffer), va_end(vl);
 				return (-1);
 			}
 			else
-			{
-				func = get_func(format, i + 1);
+			{	func = get_func(format, i + 1);
 				if (func == NULL)
 				{
 					if (format[i + 1] == ' ' && !format[i + 2])
