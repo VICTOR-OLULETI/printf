@@ -29,7 +29,7 @@ int str_nupx(va_list vl, char *buf, unsigned int j)
 	j = str_cpy(buf, 'X', j);
 	binary = malloc(sizeof(char) * (32 + 1));
 	binary = binary_array(binary, int_input, isneg, 32);
-	hexadecimal = malloc(sizeof(char) * ( 8 + 1));
+	hexadecimal = malloc(sizeof(char) * (8 + 1));
 	hexadecimal = hex_array(binary, hexadecimal, 1, 8);
 	for (first = i = count = 0; hexadecimal[i]; i++)
 	{

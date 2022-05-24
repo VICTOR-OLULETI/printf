@@ -13,7 +13,7 @@ char *__strrev(char *str)
 	char c;
 
 	if (!str)
-		return NULL;
+		return (NULL);
 	while (str[len] != '\0')
 	{
 		len++;

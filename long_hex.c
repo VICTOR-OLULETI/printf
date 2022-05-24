@@ -1,13 +1,11 @@
 #include "main.h"
-
 /**
  * str_lhex - long decimal in hexadecimal
- * vl: list
- * @buf: buffer
- * @j: index
+ * @vl:list of arguments
+ * @buf:buffer
+ * @j:index
  * Return: number of character printed
  */
-
 int str_lhex(va_list vl, char *buf, unsigned int j)
 {
 	long int input, i, isneg, count, first_digit;
@@ -28,7 +26,7 @@ int str_lhex(va_list vl, char *buf, unsigned int j)
 
 	binary = malloc(sizeof(char) * (64 + 1));
 	binary = binary_array(binary, input, isneg, 64);
-	hexadecimal = malloc(sizeof(char ) * (16 + 1));
+	hexadecimal = malloc(sizeof(char) * (16 + 1));
 	hexadecimal = hex_array(binary, hexadecimal, 0, 16);
 	for (first_digit = i = count = 0; hexadecimal[i]; i++)
 	{

@@ -12,7 +12,7 @@ int str_add(va_list vl, char *buffer, unsigned int j)
 {
 	void *add;
 	long int input;
-	int i , count, first_digit, isneg;
+	int i, count, first_digit, isneg;
 	char *hexadecimal, *binary;
 	char empty[] = "(nil)";
 

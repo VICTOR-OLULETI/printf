@@ -28,7 +28,7 @@ int str_noct(va_list vl, char *buf, unsigned int j)
 	j = str_cpy(buf, '0', j);
 	binary = malloc(sizeof(char) * (32 + 1));
 	binary = binary_array(binary, int_input, isnegative, 32);
-	octal = malloc(sizeof(char) *(11 + 1));
+	octal = malloc(sizeof(char) * (11 + 1));
 	octal = oct_array(binary, octal);
 	for (first_digit = i = count = 0; octal[i]; i++)
 	{

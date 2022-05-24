@@ -26,7 +26,7 @@ int str_loct(va_list vl, char *buf, unsigned int j)
 
 	binary = malloc(sizeof(char) * (64 + 1));
 	binary = binary_array(binary, int_input, isnegative, 64);
-	octal = malloc(sizeof(char) * ( 22 + 1));
+	octal = malloc(sizeof(char) * (22 + 1));
 	octal = long_oct_array(binary, octal);
 
 	for (first_digit = i = count = 0; octal[i]; i++)

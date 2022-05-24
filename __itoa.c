@@ -23,7 +23,7 @@ char *__itoa(int i, char *strout, int base)
 	{
 		digit = i % base;
 		*str = (digit > 9) ? ('A' + digit - 10) : '0' + digit;
-		i = i /base;
+		i = i / base;
 		str++;
 	}
 	if (sign)

@@ -22,7 +22,6 @@ char *_strcpy(char *str1, char *str2)
 		j++;
 	}
 	n = i + j;
-	
 	for (k = i; k < n; k++)
 	{
 		str1[k] = str2[k - i];

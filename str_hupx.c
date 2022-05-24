@@ -3,7 +3,8 @@
 /**
  * str_hupx - prints a short decimal in hexadecimal
  * @vl: list
- * @buf: index
+ * @buf: buffer
+ * @j: index of buffer
  * Return: number of characters
  */
 
