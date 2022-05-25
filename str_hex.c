@@ -16,6 +16,11 @@ int str_hex(va_list vl, char *buf, unsigned int j)
 	isneg = 0;
 	if (input == 0)
 	{
+		j = str_cpy(buf, '0', j);
+		return (1);
+	}
+	if (input < 0)
+	{
 		input = (input * -1) - 1;
 		isneg = 1;
 	}
